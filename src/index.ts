@@ -14,7 +14,7 @@ let globalApiKey = 'KEY'; // create API Global Key https://dash.cloudflare.com/p
 
 
 //     OLD IP TO BE CHANGED    NEW IP TO WICH IT IS TO BE CHANGED
-changeRecords("5.181.151.19", "45.142.115.52");
+changeRecords("5.181.151.19", "45.142.115.00");
 
 
 
