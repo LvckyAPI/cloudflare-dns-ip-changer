@@ -1,4 +1,4 @@
-# LvckyWorld CloudFlare DNS Ip-Changer
+# LvckyWorld CloudFlare DNS IP-Changer
  
 Hello, my name is Iven. I coded a tool a tool to change the CloudFlare DNS entries of a specific IP address all. 
 I had a lot of DNS entries and after a server change I had to change the IPv4 of the server. 
