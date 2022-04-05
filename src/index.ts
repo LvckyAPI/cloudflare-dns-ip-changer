@@ -23,7 +23,7 @@ changeRecords("5.181.151.19", "45.142.115.00");
 
 
 /**
- * Change the IP#s of multible DNS entries with the same IP
+ * Change the IP's of multible DNS entries with the same IP
  * @param oldIP The IP to filter by
  * @param newIP The new IP to which the filtered one should be set
  * @author LvckyAPI - Iven Schlenther - LvckyWorld.NET

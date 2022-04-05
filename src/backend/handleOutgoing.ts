@@ -3,13 +3,13 @@ import fetch from "node-fetch";
 
 
 /**
-* * Send you a lost of all DNS emtries fith a specified IP-Adress from an Zone
-* @param options POST BODY
-* @param zoneID CloudFlare ZoneID
-* @param filteredIP Specified IP to filter
-* @param apiToken CloudFlare-API-Key
-* @author LvckyAPI - Iven Schlenther - LvckyWorld.NET
-*/
+ * Patch DNS entries
+ * @param options body
+ * @param dnsId DNS identifier
+ * @param zoneID CloudFlare ZoneID
+ * @param accountMail Account mail
+ * @param globalApiKey The CloudFlare globalApiKey
+ */
 export async function post(options, dnsId: string, zoneID: string, accountMail: string, globalApiKey: string) {
     fetch(`https://api.cloudflare.com/client/v4/zones/${zoneID}/dns_records/${dnsId}`, {
         method: "patch",
@@ -27,12 +27,12 @@ export async function post(options, dnsId: string, zoneID: string, accountMail: 
 
 
 /**
-* * Send you a lost of all DNS emtries fith a specified IP-Adress from an Zone
-* @param options POST BODY
-* @param zoneID CloudFlare ZoneID
-* @param filteredIP Specified IP to filter
-* @param apiToken CloudFlare-API-Key
-*/
+ * Delete entries
+ * @param dnsId The identifier of the DNS entry
+ * @param zoneID The CloudFlare zone id
+ * @param accountMail Account mail
+ * @param globalApiKey The CloudFlare globalApiKey
+ */
 export async function deleteAllRecords(dnsId: string, zoneID: string, accountMail: string, globalApiKey: string) {
     fetch(`https://api.cloudflare.com/client/v4/zones/${zoneID}/dns_records/${dnsId}`, {
         method: "delete",
