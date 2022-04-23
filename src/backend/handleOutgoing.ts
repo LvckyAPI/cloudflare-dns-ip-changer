@@ -9,6 +9,7 @@ import fetch from "node-fetch";
  * @param zoneID CloudFlare ZoneID
  * @param accountMail Account mail
  * @param globalApiKey The CloudFlare globalApiKey
+ * @author LvckyAPI - Iven Schlenther - LvckyWorld.NET
  */
 export async function post(options, dnsId: string, zoneID: string, accountMail: string, globalApiKey: string) {
     fetch(`https://api.cloudflare.com/client/v4/zones/${zoneID}/dns_records/${dnsId}`, {
@@ -32,6 +33,7 @@ export async function post(options, dnsId: string, zoneID: string, accountMail: 
  * @param zoneID The CloudFlare zone id
  * @param accountMail Account mail
  * @param globalApiKey The CloudFlare globalApiKey
+ * @author LvckyAPI - Iven Schlenther - LvckyWorld.NET
  */
 export async function deleteAllRecords(dnsId: string, zoneID: string, accountMail: string, globalApiKey: string) {
     fetch(`https://api.cloudflare.com/client/v4/zones/${zoneID}/dns_records/${dnsId}`, {
